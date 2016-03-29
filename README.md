@@ -1,17 +1,10 @@
-# Pomodoro Clock
+#local-weather
 
-Time management web site
+_Show the local weather using the OpenWeatherMap API and the NavigatorGeolocation Interface_
 
-> - I can customize the length of each pomodoro and break.
->
-> - I can start a pomodoro, and the timer will go off once the set time period is over.
->
-> - I can reset the clock for my next pomodoro.
-
-## Demo
-
-http://codepen.io/heldderarbeit/full/QNgJzj
+##Demo
+http://codepen.io/heldderarbeit/live/xZXRbL
 
 ## License
-MIT License. [Click here for more information.](LICENSE)
+MIT License. [Click here for more information.](LICENSE.md)
 
