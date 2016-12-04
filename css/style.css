@@ -134,9 +134,7 @@ body:hover {
   color: black;
 }
 
-
 /* mobile version */
-
 @media all and (max-width:510px) {
   .info1,
   .info2 {
@@ -167,7 +165,8 @@ body:hover {
     margin-bottom: -5px;
   }
 }
-  @media all and (max-height:300px) {
+
+@media all and (max-height:300px) {
   .weather-infobox {
     margin-top: 5px;
   }
