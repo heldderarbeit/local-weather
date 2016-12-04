@@ -13,9 +13,7 @@ if (typeof(Storage) !== "undefined") {
     var latitude = sessionStorage.getItem('latitude');
     var longitude = sessionStorage.getItem('longitude');
     dataHandler(latitude, longitude);
-
   } else {
-
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
 
@@ -29,7 +27,6 @@ if (typeof(Storage) !== "undefined") {
 
         dataHandler(latitude, longitude);
       });
-
     }
   }
 }
@@ -64,7 +61,6 @@ function dataHandler(latitude, longitude) {
     var paddingValue;
 
     switch (icon) {
-
       case "01d":
         appicon = "wi-day-sunny";
         break;
@@ -169,9 +165,9 @@ function dataHandler(latitude, longitude) {
     }
 
     if (appicon) {
-
       removeAllWeatherIconClasses();
       $(".weather-symbol").addClass(appicon);
+      
       if (paddingToAdd && paddingValue) {
         $(".weather-symbol").css(paddingToAdd, paddingValue);
       }
@@ -203,7 +199,6 @@ function removeAllWeatherIconClasses() {
 
 $(".celsius").click(function() {
   if (tempfahrenheitrounded && tempcelsiusrounded) {
-
     if ($(".celsius").text().substring($(".celsius").text().length - 2, $(".celsius").text().length) == "°C") {
       $(".celsius").text(tempfahrenheitrounded + " °F");
     } else {
